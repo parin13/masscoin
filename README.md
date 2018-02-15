@@ -104,7 +104,7 @@ And your masscoin instance runs in your system after sucessful installation<br /
 2)Type following command
 ``` ./masscoind setgenerate true``` 
 
-###log Alert
+### log Alert
 User will get to see the log on
 ``` root``` <br />
 ```cd .masscoin```<br />
