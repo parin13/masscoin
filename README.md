@@ -77,10 +77,10 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
      ``` ./masscoind -daemon```
      (Your will get a error message)
   3)Now go to root and type following command
-     ```cd .masscoin
-     vim masscoin.conf
-     rpcuser=username 
-     rpcpassword= password```
+     ```cd .masscoin```
+    ``` vim masscoin.conf```
+   ```  rpcuser=username ```
+```     rpcpassword= password```
      
    4)Now repeat step 2 to get daemon active
 
