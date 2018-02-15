@@ -9,7 +9,7 @@ Copyright (c) 2017-2018 Masscoin Developers
 What is Masscoin?
 ----------------
 
-Masscoin is a lite version of Litecoin using scrypt as a proof-of-work algorithm.
+Masscoin is a lite  customized version of Litecoin using scrypt as a proof-of-work algorithm.
  - 15 sec block targets
  - subsidy halves in 4204800 blocks (~2 years)
  - 270,000,000 total coins
@@ -70,7 +70,7 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     make -f Makefile.test
     ./masscoin-qt_test
 
-### Installeing masscoin in ubuntu system
+### Installing masscoin in ubuntu system
   
   1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoid/<br />
   2)Through terminal go to source destination and type<br />
@@ -86,7 +86,7 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
 
 
-### Installeing masscoin in windows system     
+### Installing  masscoin in windows system     
     
 1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoin.git/<br />
 2)Install  the instance through setup file inside out folder<br />
