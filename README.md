@@ -72,30 +72,40 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
 ### Installeing masscoin in ubuntu system
   
-  1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoid/
-  2)Through terminal go to source destination and type
-     ``` ./masscoind -daemon```
+  1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoid/<br />
+  2)Through terminal go to source destination and type<br />
+     ``` ./masscoind -daemon```<br />
      (Your will get a error message)
   3)Now go to root and type following command
-     ```cd .masscoin```
-    ``` vim masscoin.conf```
-   ```  rpcuser=username ```
-```     rpcpassword= password```
+     ```cd .masscoin```<br />
+    ``` vim masscoin.conf```<br />
+   ```  rpcuser=username ```<br />
+```     rpcpassword= password```<br />
      
-   4)Now repeat step 2 to get daemon active
+   4)Now repeat step 2 to get daemon active<br />
 
 
 
 ### Installeing masscoin in windows system     
     
-1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoin.git/
-2)Install  the instance through setup file inside out folder
-And your masscoin instance runs in your system after sucessful installation
+1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoin.git/<br />
+2)Install  the instance through setup file inside out folder<br />
+And your masscoin instance runs in your system after sucessful installation<br />
 
 ### Minning masscoin in using GPU
 
-1)Download CGminer(preferable v3.7.2)
-2)Goto source file using terminal and type following command
+1)Download CGminer(preferable v3.7.2)<br />
+2)Goto source file using terminal and type following command<br />
 
 ```./cgminer --scrypt -o http://127.0.0.1:8332 -u username -p paswrd --intensity d```
 
+### Minning masscoin in using CPU(not recommended)
+1)Daemon should still be active 
+2)Type following command
+``` ./masscoind setgenerate true``` 
+
+###log Alert
+User will get to see the log on
+``` root``` <br />
+```cd .masscoin```<br />
+```tailf debug.log```
