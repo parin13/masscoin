@@ -1,25 +1,24 @@
 Masscoin integration/staging tree
 ================================
 
-http://www.masscoin.org
+http://www.masscrypt.io
 
-Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Masscoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
+Copyright (c) 2017-2018 Masscoin Developers
 
 What is Masscoin?
 ----------------
 
-Masscoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+Masscoin is a lite version of Litecoin using scrypt as a proof-of-work algorithm.
+ - 15 sec block targets
+ - subsidy halves in 4204800 blocks (~2 years)
+ - 270,000,000 total coins
 
-The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+ - Reward is 32 coins per block
+ - 5760 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the Masscoin client sofware, see http://www.masscoin.org.
+the Masscoin client sofware, see http://www.masscrypt.io
 
 License
 -------
@@ -45,7 +44,7 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/masscoin-project/masscoin/tags) are created
+completely stable. [Tags](https://github.com/auxesisgroup/masscoin/tags) are created
 regularly to indicate new official, stable release versions of Masscoin.
 
 Testing
@@ -70,4 +69,33 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
     make -f Makefile.test
     ./masscoin-qt_test
+
+### Installeing masscoin in ubuntu system
+  
+  1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoid/
+  2)Through terminal go to source destination and type
+     ``` ./masscoind -daemon```
+     (Your will get a error message)
+  3)Now go to root and type following command
+     ```cd .masscoin
+     vim masscoin.conf
+     rpcuser=username 
+     rpcpassword= password```
+     
+   4)Now repeat step 2 to get daemon active
+
+
+
+### Installeing masscoin in windows system     
+    
+1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoin.git/
+2)Install  the instance through setup file inside out folder
+And your masscoin instance runs in your system after sucessful installation
+
+### Minning masscoin in using GPU
+
+1)Download CGminer(preferable v3.7.2)
+2)Goto source file using terminal and type following command
+
+```./cgminer --scrypt -o http://127.0.0.1:8332 -u username -p paswrd --intensity d```
 
