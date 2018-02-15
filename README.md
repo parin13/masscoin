@@ -99,7 +99,7 @@ And your masscoin instance runs in your system after sucessful installation<br /
 1)Download CGminer(preferable v3.7.2)<br />
 2)Goto source file using terminal and type following command<br />
 
-```./cgminer --scrypt -o http://127.0.0.1:2333 -u username -p paswrd --intensity d```
+```./cgminer --scrypt -o http://127.0.0.1:2333 -u username -p paswrd --intensity d```<br />
 Note: Port should same where daemon is running
 
 ### Minning masscoin in using CPU(not recommended)
