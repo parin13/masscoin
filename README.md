@@ -1,7 +1,7 @@
 Masscoin integration/staging tree
 ================================
 
-http://www.masscrypt.io
+https://masscryptoken.io/
 
 Copyright (c) 2011-2014 Litecoin Developers
 Copyright (c) 2017-2018 Masscoin Developers
@@ -18,7 +18,7 @@ Masscoin is a lite  customized version of Litecoin using scrypt as a proof-of-wo
  - 5760 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the Masscoin client sofware, see http://www.masscrypt.io
+the Masscoin client sofware, see https://masscryptoken.io/
 
 License
 -------
