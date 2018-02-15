@@ -5,7 +5,7 @@ suites:
 architectures:
 - "i386"
 - "amd64"
-packages: 
+packages:
 - "libdb4.8++-dev"
 - "qt4-qmake"
 - "libqt4-dev"
@@ -20,7 +20,7 @@ packages:
 - "libpng12-dev"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/masscoin-project/masscoin.git"
+- "url": "https://github.com/parin13/masscoin.git"
   "dir": "masscoin"
 files:
 - "miniupnpc-1.9.20140401.tar.gz"
