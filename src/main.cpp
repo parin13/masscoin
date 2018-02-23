@@ -1088,8 +1088,11 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 32 * COIN;
-
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 2 years
+    if(nHeight == 2)
+       {
+            nSubsidy = 30000000 * COIN;
+        }
+    // Subsidy is cut in half every 4204800 blocks, which will occur approximately every 2 years
     nSubsidy >>= (nHeight / 4204800); // Masscoin:  ~2 years
 
     return nSubsidy + nFees;
@@ -2785,12 +2788,12 @@ bool InitBlockIndex() {
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 32 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("044c9583cdc4bff4fee5f3c5f5ea3caa90283a2f3d665573ddbeb48012309f546f580b9e2ed8942757ac0e49d531aa17cda733aebdeb8602b10247c3a83f7f8305") << OP_CHECKSIG; 
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("044c9583cdc4bff4fee5f3c5f5ea3caa90283a2f3d665573ddbeb48012309f546f580b9e2ed8942757ac0e49d531aa17cda733aebdeb8602b10247c3a83f7f8305") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
-        block.nVersion = 1;                                                                                                                                                                                         
+        block.nVersion = 1;
         block.nTime    = 1518520240;   //mainnet time
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 2084635057;
@@ -2809,7 +2812,7 @@ if (false && block.GetHash() != hashGenesisBlock)
             uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
             uint256 thash;
             char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
- 
+
             loop
             {
 #if defined(USE_SSE2)
@@ -2851,7 +2854,7 @@ if (false && block.GetHash() != hashGenesisBlock)
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
         assert(block.hashMerkleRoot == uint256("0x695191c2e8f8fddc75331a38d658ab07672970b09981ad77c29c4b0b17580941"));
         block.print();
-        assert(hash == hashGenesisBlock);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        assert(hash == hashGenesisBlock);
 
         // Start new block file
         try {
