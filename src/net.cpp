@@ -1173,8 +1173,10 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    // {"masscointools.com", "dnsseed.masscointools.com"},
-    // {"masscoinpool.org", "dnsseed.masscoinpool.org"},
+    {"165.227.116.61", "165.227.116.61"},
+     {"165.227.208.53", "165.227.208.53"},
+      {"165.227.126.99", "165.227.126.99"},
+       {"104.236.28.204", "104.236.28.204"},
     // {"xurious.com", "dnsseed.ltc.xurious.com"},
     // {"koin-project.com", "dnsseed.koin-project.com"},
     // {"weminemnc.com", "dnsseed.weminemnc.com"},
@@ -1182,6 +1184,10 @@ static const char *strMainNetDNSSeed[][2] = {
 };
 
 static const char *strTestNetDNSSeed[][2] = {
+    {"165.227.116.61", ""},
+    {"165.227.208.53", ""},
+    {"165.227.126.99", ""},
+    {"104.236.28.204", ""},
     // {"masscointools.com", "testnet-seed.masscointools.com"},
     // {"xurious.com", "testnet-seed.ltc.xurious.com"},
     // {"wemine-testnet.com", "dnsseed.wemine-testnet.com"},
@@ -1232,8 +1238,9 @@ void ThreadDNSAddressSeed()
 
 
 unsigned int pnSeed[] =
-{   0x0
-    // 0x38a9b992, 0x73d4f3a2, 0x43eda52e, 0xa1c4a2b2, 0x73c41955, 0x6992f3a2, 0x729cb992, 0x8b53b205,
+{   
+    // 0x0
+    0xa5e3743d, 0xa5e3d035, 0xa5e37e63, 0x68ec1ccc,
     // 0xb651ec36, 0x8b422e4e, 0x0fe421b2, 0x83c1a2b2, 0xbd432705, 0x2e11b018, 0x281544c1, 0x8b72f3a2,
     // 0xb934555f, 0x2ba02e4e, 0x6ab7c936, 0x8728555f, 0x03bfd143, 0x0a73df5b, 0xcd2b5a50, 0x746df3a2,
     // 0x7481bb25, 0x6f4d4550, 0x78582f4e, 0xa03a0f46, 0xe8b0e2bc, 0xa2d17042, 0x718a09b0, 0xdaffd4a2,
