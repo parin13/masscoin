@@ -4,6 +4,10 @@ Masscoin integration/staging tree
 ================================
 Copyright (c) 2017-2018 Parishilan Rayamajhi<br/>
 
+## Acknowledgments
+Soul purpose of developing Masscoin is to understand the basic of Blockchain. <br/>
+After completion of this project one can have clear picture of working  blockchain network with all required technical</br> aspects like consensus, Orphane Block, Conformaiton Time, Premined coins, Blocks, Node etc
+
 
 What is Masscoin?
 ----------------
@@ -17,7 +21,7 @@ Masscoin is a lite  customized version of Litecoin using scrypt as a proof-of-wo
  - 5760 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the Masscoin client sofware, see https://masscryptoken.io/
+the Masscoin client sofware, contact parishilanrayamajhi@gmail.com
 
 License
 -------
@@ -43,8 +47,7 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/auxesisgroup/masscoin/tags) are created
-regularly to indicate new official, stable release versions of Masscoin.
+completely stable. 
 
 Testing
 -------
@@ -71,7 +74,7 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
 ### Installing masscoin in ubuntu system
   
-  1)Download masscoind (executable) from https://github.com/auxesisgroup/masscoid/<br />
+  1)Download masscoind (executable)<br />
   2)Through terminal go to source destination and type<br />
      ``` ./masscoind -daemon```<br />
      (Your will get a error message)
