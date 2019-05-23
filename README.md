@@ -1,10 +1,9 @@
+
+
 Masscoin integration/staging tree
 ================================
+Copyright (c) 2017-2018 Parishilan Rayamajhi<br/>
 
-https://masscryptoken.io/
-
-Copyright (c) 2011-2014 Litecoin Developers<br />
-Copyright (c) 2017-2018 Masscoin Developers
 
 What is Masscoin?
 ----------------
